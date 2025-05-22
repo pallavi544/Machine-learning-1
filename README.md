@@ -3,51 +3,51 @@
 This project demonstrates a foundational machine learning workflow using a classification algorithm to predict outcomes based on input features. It walks through essential steps in a machine learning pipeline, including data preprocessing, model training, evaluation, and visualization of results. The goal is to provide hands-on experience in applying supervised learning techniques using Python.
 
 ## Objectives
-*Understand the process of building a supervised ML model
+* Understand the process of building a supervised ML model
 
-*Practice data preprocessing techniques such as encoding and scaling
+* Practice data preprocessing techniques such as encoding and scaling
 
-*Train and evaluate a classification algorithm
+* Train and evaluate a classification algorithm
 
-*Interpret performance metrics and visualize model outcomes
+* Interpret performance metrics and visualize model outcomes
 
 ## Steps Covered
-*Data Cleaning & Preprocessing
+* Data Cleaning & Preprocessing
 
-*Handling missing values
+* Handling missing values
 
-*Encoding categorical variables
+* Encoding categorical variables
 
-*Feature scaling
+* Feature scaling
 
-*Model Building
+* Model Building
 
-*Training a classification model (e.g., Logistic Regression)
+* Training a classification model (e.g., Logistic Regression)
 
-*Splitting data into training and test sets
+* Splitting data into training and test sets
 
-*Model Evaluation
+* Model Evaluation
 
-*Accuracy Score
+* Accuracy Score
 
-*Confusion Matrix
+* Confusion Matrix
 
-*Classification Report
+* Classification Report
 
-*Visualization of predictions
+* Visualization of predictions
 
 ## Technologies Used
-Python – Programming language
+* Python – Programming language
 
-Pandas – Data manipulation
+* Pandas – Data manipulation
 
-NumPy – Numerical operations
+* NumPy – Numerical operations
 
-Scikit-learn (sklearn) – Machine learning library
+* Scikit-learn (sklearn) – Machine learning library
 
-Matplotlib & Seaborn – Data visualization
+* Matplotlib & Seaborn – Data visualization
 
-Jupyter Notebook – Interactive development environment
+* Jupyter Notebook – Interactive development environment
 
 ## How to Run Locally
 1.Clone the repository:
