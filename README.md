@@ -1,53 +1,95 @@
-# Machine-learning-1
-## About the Project
-This project demonstrates a foundational machine learning workflow using a classification algorithm to predict outcomes based on input features. It walks through essential steps in a machine learning pipeline, including data preprocessing, model training, evaluation, and visualization of results. The goal is to provide hands-on experience in applying supervised learning techniques using Python.
+#  Machine Learning Project – Diabetes Prediction Using Random Forest Classifier
 
-## Objectives
-* Understand the process of building a supervised ML model
+This project demonstrates how to build a diabetes prediction model using the **Random Forest Classifier**. It follows a complete machine learning pipeline including data preprocessing, exploratory data analysis (EDA), model training, evaluation, and result interpretation.
 
-* Practice data preprocessing techniques such as encoding and scaling
+---
 
-* Train and evaluate a classification algorithm
+##  Project Objective
 
-* Interpret performance metrics and visualize model outcomes
+To predict whether a patient is diabetic based on diagnostic health measurements using a supervised machine learning model.
 
-## Steps Covered
-* Data Cleaning & Preprocessing
+---
 
-* Handling missing values
+##  Dataset Description
 
-* Encoding categorical variables
+The dataset used is the **Pima Indians Diabetes Dataset**, which contains medical diagnostic data for female patients of Pima Indian heritage.
 
-* Feature scaling
+| Feature                   | Description                                               |
+|---------------------------|-----------------------------------------------------------|
+| Pregnancies               | Number of times pregnant                                  |
+| Glucose                   | Plasma glucose concentration (mg/dL)                      |
+| BloodPressure             | Diastolic blood pressure (mm Hg)                          |
+| SkinThickness             | Triceps skinfold thickness (mm)                           |
+| Insulin                   | 2-Hour serum insulin (mu U/ml)                            |
+| BMI                       | Body Mass Index                                           |
+| DiabetesPedigreeFunction  | Genetic influence on diabetes                             |
+| Age                       | Age of the patient                                        |
+| Outcome                   | 1 = Diabetic, 0 = Non-diabetic                            |
 
-* Model Building
+---
 
-* Training a classification model (e.g., Logistic Regression)
+##  Tools & Technologies Used
 
-* Splitting data into training and test sets
+- **Python**
+- **Jupyter Notebook**
+- **Libraries**:
+  - pandas, numpy (data manipulation)
+  - matplotlib, seaborn (data visualization)
+  - scikit-learn (machine learning)
 
-* Model Evaluation
+---
 
-* Accuracy Score
+##  Workflow
 
-* Confusion Matrix
+### 1. **Data Loading**
+- Data imported from `diabetes2.xlsx`.
 
-* Classification Report
+### 2. **Data Preprocessing**
+- Replaced zero values in `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` with `NaN`.
+- Imputed missing values using the **median** of each column.
+- Normalized the features using **StandardScaler** to prepare for training.
 
-* Visualization of predictions
+### 3. **Exploratory Data Analysis**
+- Plotted feature distributions and correlations.
+- Used a heatmap to visualize relationships among features.
+- Identified highly correlated predictors (e.g., Glucose vs Outcome).
 
-## Technologies Used
-* Python – Programming language
+### 4. **Model Building – Random Forest Classifier**
+- Applied **RandomForestClassifier** from `scikit-learn`.
+- Split data into **training and testing sets** (typically 80/20 or 70/30).
+- Trained the model using the training set.
 
-* Pandas – Data manipulation
+### 5. **Model Evaluation**
+- Accuracy Score
+- Confusion Matrix
+- Classification Report (Precision, Recall, F1-score)
 
-* NumPy – Numerical operations
+---
 
-* Scikit-learn (sklearn) – Machine learning library
+##  Results
 
-* Matplotlib & Seaborn – Data visualization
+- **Model Used**: `RandomForestClassifier()`
+- **Accuracy**: ~78% (approximate; may vary slightly)
+- **Key Insight**:
+  - Random Forest was chosen for its robustness, ability to handle missing/imbalanced data, and high accuracy.
+  - Glucose, BMI, and Age were among the most important features.
 
-* Jupyter Notebook – Interactive development environment
+---
+
+## Learning Outcomes
+* Gained hands-on experience in applying Random Forest for classification.
+
+* Improved skills in:
+
+* Data cleaning and imputation
+
+* Feature scaling and transformation
+
+* Evaluating classification models
+
+* Understood how health data can be modeled using machine learning.
+
+---
 
 ## How to Run Locally
 1.Clone the repository:
